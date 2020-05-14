@@ -14,6 +14,12 @@ class Job(models.Model):
         return self.job_title
 
 
+class Post(models.Model):
+    pass
+
+
+
+
 
 
 

@@ -24,6 +24,11 @@ urlpatterns = [
     path('aboutme/',views.about_me,name='aboutme'),
     path('',views.index, name= 'index'),
     path('jobs/',views.show_jobs, name='show_jobs')
-] + static(settings.STATIC_URL, document_root= settings.STATIC_ROOT)
+] 
 
-# Line 27 is all about telling where static files are and where they should be located for dynamic purpose
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# Line 30 is all about telling where static files are and where they should be located for dynamic purpose
+# similarly for line 31 for media

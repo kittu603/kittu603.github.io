@@ -5,7 +5,7 @@ from .models import Job
 # Create your views here.
 
 def about_me(request):
-    return HttpResponse("This is abt me")
+    return render(request,'jobs/about.html')
 
 def index(request):
     return render(request,"jobs/index.html")

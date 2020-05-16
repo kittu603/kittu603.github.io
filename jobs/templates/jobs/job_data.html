@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 {% extends "jobs/base.html" %}
 {% block body_block %}
+{% load static %}
 
     <div class="container-fluid bg-3 text-center">
         <h3>Glimpse of my projects in my jobs</h3>
         <br><br/>
-
+            
         <p></p>
 
         
@@ -15,12 +16,14 @@
                 
                 <div class='col-md-4'>
                     <div class="card mb-4 shadow-sm">
-                        <img src="https://placehold.it/150x80?text=IMAGE" class="card-img-top" style="width:100%" alt="Image">
+                        <p><strong>{{ job.job_title }} at {{job.employer}}</strong></p>
+                        <img class="card-img-top" src="{{ STATIC_URL }}{{ job.image.url }}" style="width:100%" alt="Image">
                         <div class="card-body">
                             <p class='card-text'>{{ job.summary }}</p>
                         </div>
                     </div>
                 </div>
+
                 
                 {% endfor %}
             

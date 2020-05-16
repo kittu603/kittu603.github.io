@@ -1,0 +1,29 @@
+[33mcommit 21784c17a8792ffb8c69c3683b1bef95b38e09b2[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: kittu <kittu.603@gmail.com>
+Date:   Sat May 16 23:46:33 2020 +0530
+
+    added url template tags and images etc
+
+[33mcommit 9f2ba001e35a3d40b1f32e8bb75df4064f44e11a[m
+Author: kittu <kittu.603@gmail.com>
+Date:   Thu May 14 21:18:14 2020 +0530
+
+    modified as per django course 4.6
+
+[33mcommit 85b104513a5135aa9cf7f933e04c388c64e1b848[m
+Author: kittu <kittu.603@gmail.com>
+Date:   Thu May 14 20:11:31 2020 +0530
+
+    created new class
+
+[33mcommit b047f95de539e4cd20eee919c62c5d6f5ff79ed4[m
+Author: kittu <kittu.603@gmail.com>
+Date:   Thu May 14 19:57:12 2020 +0530
+
+    first commit, adding project to GIT
+
+[33mcommit 8556e1663f61f35116c3f3d5c700f115bbd5e49f[m
+Author: kittu603 <42958352+kittu603@users.noreply.github.com>
+Date:   Thu May 14 20:02:44 2020 +0530
+
+    Initial commit

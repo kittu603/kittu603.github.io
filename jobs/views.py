@@ -14,4 +14,14 @@ def show_jobs(request):
     jobs = Job.objects
     return render(request,"jobs/job_data.html",{"jobs_data":jobs})
 
+def contact(request):
+    return render(request,"jobs/contact.html")
+
+def my_gallery(request):
+    return render(request,"jobs/gallery.html")
+
+
+
+
+
 

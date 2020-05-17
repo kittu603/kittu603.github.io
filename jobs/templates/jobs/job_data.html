@@ -6,31 +6,22 @@
     <div class="container-fluid bg-3 text-center" style="color: whitesmoke"> 
         <h3 > Glimpse of my projects in my jobs</h3>
         <br><br/>
-            
         <p></p>
 
-        
         <div class="jumbotron" style="color:whitesmoke">
             <div class="row">
                 {% for job in jobs_data.all %}
                 
                 <div class='col-md-4'>
+                    <a href="{% url 'job_detail' job.id %}">
                     <div class="card mb-4 shadow-sm">
                         <p><strong>{{ job.job_title }} at {{job.employer}}</strong></p>
-                        <img class="card-img-top" src="{{ STATIC_URL }}{{ job.image.url }}" style="width:100%" alt="Image">
-                        <div class="card-body">
-                            <p class='card-text'>{{ job.summary }}</p>
-                        </div>
-                    </div>
+                        <img class="card-img-top" src="{{ STATIC_URL }}{{ job.image.url }}"  style="width:100%" alt="Image"></a>
+                    </div> 
                 </div>
-
-                
                 {% endfor %}
-            
             </div>
-
         </div>
-       
     </div><br>
     
 {% endblock %}

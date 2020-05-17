@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends "jobs/base.html" %}
+{% load static %}
+{% block body_block %}
+    <div class="jumbotron" style="background-color: rgb(9, 43, 110);">
+        <div class="card-body">
+            <h2 style="color: bisque;">{{ job.summary }} as {{ job.job_title }}</h2>
+        </div>
+            
+        <br><br />
+        <a href="{% url 'index' %}" class="btn btn-primary">Home</a>
+        <a href="{% url 'show_works'  %}" class="btn btn-default">My Works</a>
+
+    </div>
+{% endblock %}

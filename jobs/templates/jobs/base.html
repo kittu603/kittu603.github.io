@@ -11,11 +11,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
         body {
-                background-color: rgb(31, 23, 48);
+                background-color: rgb(6, 1, 17);
         }
 
         .jumbotron {
-            background: chartreuse;
+            background: rgb(16, 17, 15);
         }
         /* Remove the navbar's default margin-bottom and rounded borders */
         .navbar {
@@ -26,10 +26,7 @@
         {
             background-color: cornsilk;
         }
-        .container-fluid bg-3 text-center{
-            background: black;
-        }
-
+    
         /* Add a gray background color and some padding to the footer */
         /* footer {
             background-color: #f2f2f2;
@@ -53,32 +50,31 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="{% url 'show_works' %}">My Works</a></li>
+                    <li><a href="{% url 'show_works' %}">My Works</a></li>
                     <li><a href="{% url 'aboutme' %}">About</a></li>
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a href="{% url 'admin:index' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
-            </div>
+            </div> 
+             
         </div>
     </nav>
 
 
 
     {% block body_block %}
-        <footer class="container-fluid text-center">
-            <p>Footer Text</p>
-        </footer>
+
     {% endblock %}
 
     
 
-    <!-- <footer>&copy; Copyright 2020 HTML.am</footer> -->
-    <footer>
-        © Copyright 2014, All Rights Reserved
-    </footer>
+    
+        <footer class="container-fluid text" style="color:whitesmoke">
+            <p>© Copyright 2020, All Rights Reserved</p>
+        </footer>
 
 </body>
 

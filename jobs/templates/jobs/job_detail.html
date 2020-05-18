@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 {% extends "jobs/base.html" %}
 {% load static %}
+    
 {% block body_block %}
-    <div class="jumbotron" style="background-color: rgb(9, 43, 110);">
+    <div class="jumbotron" style= "color : rgb(234, 236, 241);">
         <div class="card-body">
             <h2 style="color: bisque;">{{ job.summary }} as {{ job.job_title }}</h2>
+            <h3>Skills used :-</h3>
+            <p></p>
+            <ul>
+                <i class='fas fa-code' style='font-size:30px'>  {{ job.skills }}</i>
+            </ul>
         </div>
             
         <br><br />

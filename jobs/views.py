@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
 from .models import Job,Visitor
 from .forms import VisitorForm
@@ -21,6 +21,7 @@ def contact(request):
         form = VisitorForm(request.POST)
         if form.is_valid():
             form.save()
+            return redirect('post_contact')
         else:
             print("invalid form data")            
 

@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.postgres.fields import ArrayField
+from phone_field import PhoneField
 # Create your models here.
 
 class Job(models.Model):
@@ -14,8 +14,15 @@ class Job(models.Model):
         return self.job_title
 
 
-class Post(models.Model):
-    pass
+class Visitor(models.Model):
+    name = models.CharField(max_length=200,blank=False)
+    email = models.EmailField(max_length=200)
+    phone_no = models.CharField(max_length=12)
+
+    def __str__(self):
+        return f"{self.name} @ {self.email}"
+
+
 
 
 

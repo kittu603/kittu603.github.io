@@ -27,7 +27,7 @@ urlpatterns = [
     path('contact/', views.contact,name='contact_info'),
     path('gallery/',views.my_gallery, name = 'gallery'),
     path('jobs/<int:job_id>/',views.job_detail, name = 'job_detail'),
-    path('clock/',views.clock, name='clock')
+    path('thanks/',views.post_contact, name='post_contact')
 ] 
 
 

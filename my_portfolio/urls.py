@@ -26,7 +26,8 @@ urlpatterns = [
     path('jobs/',views.show_jobs, name='show_works'),
     path('contact/', views.contact,name='contact_info'),
     path('gallery/',views.my_gallery, name = 'gallery'),
-    path('jobs/<int:job_id>/',views.job_detail, name = 'job_detail')
+    path('jobs/<int:job_id>/',views.job_detail, name = 'job_detail'),
+    path('clock/',views.clock, name='clock')
 ] 
 
 

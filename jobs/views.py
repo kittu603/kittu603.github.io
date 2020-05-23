@@ -24,6 +24,11 @@ def job_detail(request,job_id):
     job = get_object_or_404(Job,pk=job_id)
     return render(request,'jobs/job_detail.html',{'job': job})
 
+def clock(request):
+    return render(request,'jobs/clock.html')
+
+
+
 
 
 

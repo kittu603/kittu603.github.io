@@ -1,0 +1,43 @@
+body {
+                background-color: rgb(6, 1, 17);
+        }
+
+.jumbotron {
+            background: rgb(16, 17, 15);
+        }
+        /* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+            margin-bottom: 0;
+            border-radius: o;
+        }
+
+.fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            }
+        
+.fa:hover {
+            opacity: 0.7;
+         }
+    
+        Add a gray background color and some padding to the footer */
+        /* footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        } */
+
+        /* Style buttons */
+
+    /* Darker background on mouse-over */
+.btn:hover {
+        background-color: RoyalBlue;
+        } */
+
+.post_form_data{
+    color: bisque;
+}
+            
+ 

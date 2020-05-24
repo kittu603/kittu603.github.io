@@ -8,11 +8,28 @@
         <li><a href="https://www.linkedin.com/in/krishna-kanth-b8770058/ " class="fa fa-linkedin"></a></li>
         <li><a href="https://github.com/kittu603" class="fa fa-github"></a></li>
     </ul>
-    <form method = "POST">
-        {% csrf_token %}
-        {{ form.as_ul }}
-        <button type="submit" class="save btn btn-default">Submit</button>
-    </form>
+
+    <div class="post_form_data" style="color: bisque;">
+        <h1>Provide your detals, we will contact you !!!</h1>
+        <br></br>
+        
+        <form method="POST">
+            <table>
+                {{ form.as_table }}
+                {% csrf_token %}
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><button type="submit" class="save btn btn-default">Submit</button></td>
+                </tr>
+        
+            </table>
+            
+        
+        </form>
+    <br></br>
+
+    </div>
+    
 
 {% endblock %}
 

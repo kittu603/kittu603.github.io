@@ -9,26 +9,22 @@
         <li><a href="https://github.com/kittu603" class="fa fa-github"></a></li>
     </ul>
 
-    <div class="post_form_data" style="color: bisque;">
-        <h1>Provide your detals, we will contact you !!!</h1>
+        <h1 style="color: blanchedalmond;"> <strong>Provide your details, we will contact you soon!</strong> </h1>
         <br></br>
         
         <form method="POST">
-            <table>
+            <table  style="color: blanchedalmond;">
                 {{ form.as_table }}
                 {% csrf_token %}
                 <tr>
                     <td>&nbsp;</td>
-                    <td><button type="submit" class="save btn btn-default">Submit</button></td>
+                    <p></p>
+                    <td></td>
                 </tr>
-        
-            </table>
-            
-        
-        </form>
-    <br></br>
+            </table> 
 
-    </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
     
 
 {% endblock %}

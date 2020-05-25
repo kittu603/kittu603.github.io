@@ -40,4 +40,10 @@ body {
     color: bisque;
 }
             
+input {
+    color:black;
+}
  
+button {
+    background-color: RoyalBlue;
+}

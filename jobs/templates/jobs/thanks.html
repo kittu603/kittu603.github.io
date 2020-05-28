@@ -3,7 +3,8 @@
 {% block body_block %}
 
 {% load static %}
-    <h1 style="color: bisque;">Thanks for visting the page</h2>
+    <h1 style="color: bisque;">Thanks for visting the page {{ visitor }}.</h2>
+    <h3 style="color: bisque;">We will reach you soon...</h3>
     <br></br>
     <a href="{% url 'index' %}" class="btn btn-primary">Home</a>
     

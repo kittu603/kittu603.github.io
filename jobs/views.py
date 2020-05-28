@@ -16,15 +16,18 @@ def show_jobs(request):
     return render(request,"jobs/job_data.html",{"jobs_data":jobs})
 
 def contact(request):
-    form = VisitorForm()
+    
     if request.method == "POST":
         form = VisitorForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('post_contact')
+            visitor_name = form.cleaned_data['name']
+            return render(request, "jobs/thanks.html", {"visitor": visitor_name})
         else:
-            print("invalid form data")            
-
+            print("invalid form data")    
+    else:
+        form = VisitorForm()
+        
     return render(request,"jobs/contact.html",{"form":form})
 
 def my_gallery(request):

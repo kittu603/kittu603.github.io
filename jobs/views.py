@@ -5,11 +5,14 @@ from .forms import VisitorForm
 
 # Create your views here.
 
+ # Grabbing no of visitors using len
+
 def about_me(request):
     return render(request,'jobs/about.html')
 
 def index(request):
-    return render(request,"jobs/index.html")
+    total_visitors = len(Visitor.objects.all())
+    return render(request,"jobs/index.html",{"total_visitors": total_visitors })
 
 def show_jobs(request):
     jobs = Job.objects
@@ -22,12 +25,13 @@ def contact(request):
         if form.is_valid():
             form.save()
             visitor_name = form.cleaned_data['name']
-            return render(request, "jobs/thanks.html", {"visitor": visitor_name})
+            total_visitors = len(Visitor.objects.all())
+            return render(request, "jobs/thanks.html", {"visitor": visitor_name,"total_visitors": total_visitors})
         else:
             print("invalid form data")    
     else:
         form = VisitorForm()
-        
+
     return render(request,"jobs/contact.html",{"form":form})
 
 def my_gallery(request):

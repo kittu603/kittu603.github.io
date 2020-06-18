@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'my_portfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'portfoliodb',
-        'USER': 'postgres',
-        'PASSWORD' : 'Alia2019',
-        'HOST' : 'localhost',
+        'NAME': 'daohdnmftrm3v1',
+        'USER': 'pbejrqjpthtkwy',
+        'PASSWORD' : 'edec2ab84d1f8abf2b38d391294855369fe245757694a64c45b980c9703f0a82',
+        'HOST': 'ec2-52-0-155-79.compute-1.amazonaws.com',
         'PORT' : '5432',
     }
 }

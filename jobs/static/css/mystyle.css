@@ -1,5 +1,5 @@
 body {
-                background-color: rgb(6, 1, 17);
+                background-color: rgb(18, 16, 22);
         }
 
 /* .jumbotron {
@@ -32,9 +32,9 @@ body {
         /* Style buttons */
 
     /* Darker background on mouse-over */
-.btn:hover {
+/* .btn:hover {
         background-color: RoyalBlue;
-        } */
+        } */ */
 
 .post_form_data{
     color: bisque;
@@ -69,3 +69,12 @@ span{
 50%{opacity: .5;}
 100%{opacity: 1;}
 } */
+
+
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #282222;
+}

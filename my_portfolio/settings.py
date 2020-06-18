@@ -38,8 +38,24 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'jobs',
+    'storages',
 
 ]
+
+AWS_STORAGE_BUCKET_NAME = 'django-my-portfolio-kittu603'
+AWS_S3_REGION_NAME = 'ap-south-1'  # e.g. us-east-2
+AWS_ACCESS_KEY_ID = 'AKIART22FCAIFCKGWASS'
+AWS_SECRET_ACCESS_KEY = 'VPqrNYpsCkPQQtYLDhyjcOUpv+UGj29XrL/gN+FX'
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+AWS_DEFAULT_ACL = None
+
+STATICFILES_LOCATION = 'static'
+STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+
+MEDIAFILES_LOCATION = 'media'
+DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

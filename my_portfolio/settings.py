@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'mj2p^%*gq4=#)3+=ugz%uhszs5dq#$5=a0)4y+)qa2ydm7rko3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['infinite-stream-75059.herokuapp.com', 'kittu603_blog.info', 'www.kittu603_blog.info']
 
 
 # Application definition
